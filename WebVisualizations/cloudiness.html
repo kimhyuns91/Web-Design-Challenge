@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=eng>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloudiness</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html" >Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+         
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="temperature.html">Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div class="summary-descript">
+                    <h2>Cloudiness</h2>
+                    <hr>
+                    <img src="Resources/assets/images/Fig3.png" alt="Lat vs Cloudiness Plot" id="visual-img">               
+                    <p>Looking at the plot, there isn't a trend of cloudiness that is dependent on the latitude. Pattern seem to be random where cloudiness is scattered throughout percentagaes at all locations. When only the cloudiness is looked, we can noticed that the 0, 75 and 90% are the most common percentages of cloudiness. This can show that when clouds form, it's usually in large amount. </p>
+                </div>
+            </div>         
+    
+            <div class="col-md-4 col-sm-12">
+                <div class="visual-pop">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-3 col-md-6">
+                            <a href=temperature.html><img src="Resources/assets/images/Fig1.png" width="100%" alt="Lat vs Max Temp Plot"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href=humidity.html><img src="Resources/assets/images/Fig2.png" width="100%" alt="Lat vs Humidity Plot"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href=cloudiness.html><img src="Resources/assets/images/Fig3.png" width="100%" alt="Lat vs Cloudiness Plot"></a>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href=wind_speed.html><img src="Resources/assets/images/Fig4.png" width="100%" alt="Lat vs Wind Speed Plot"></a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <footer class="footer-box font-small footer-dark">
+        <div class="text-muted text-center">
+            <p id="footer-text">
+                    &copy; Copyright Coding Bootcamp 2020
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
